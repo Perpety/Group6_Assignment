@@ -1,18 +1,18 @@
 from datetime import datetime, time
 import csv
-
+ 
 # Current date time in local system
 startA = datetime.now()
 print(startA)
-
+ 
 # Name of the task taken
 task_Name = input("\nWhat is the name of the task: \t")
 #print(task_Name, "is the task name.")
-
+ 
 #Task type
 task_Type = input("\nWhich type of task is it: \t")
 #print("\nThis is a", task_Type, "task type.")
-
+ 
 # Name of user
 user_Name = input("\nWhat is your name: \t")
 
@@ -98,51 +98,10 @@ def convert_to_csv():
             writer.writerow(data)
 
 if __name__ == "__main__":
-<<<<<<< HEAD
    task_Menu()
 
 
-# You can run this to Tis is version 2
-# Mine
-from datetime import datetime, time
-import csv
-
-# Current date time in local system
-startA = datetime.now()
-print(startA)
-
-# Name of the task taken
-task_Name = input("What is the name of the task: \t")
-print(task_Name, "is the task name.")
-
-#Task type
-task_Type = input("Which type of task is it: \t")
-print("This is a", task_Type, "task type.")
-
-# Name of user
-user_Name = input 
-
-#Program menu
-def task_Menu():
-
-
-def menu_options():
-       print("*****************************************************")
-   print("\tWelcome Time Tracking Program")
-   print("*****************************************************")
-   print("Enter the number to select an option:")
-   print("[1] Calculate time taken to complete a task and export as csv")
-   print("[2] Calculate time taken to complete a task and export as excel")
-   print("[3] Quit")
-
-   option = input("Option: ")
-   option = int(option)    # convert option to an integer
-   if option == 1:
-       convert_to_csv()
-   elif option == 2:
-       convert_to_excel()
-   else:
-
+#This is Also another way to go about it
 #Gets task started datetime input from user
 start = input("Input time started the task in HH:MM: \t")
 format = "%Y-%m-%d %H:%M:%S"
@@ -188,7 +147,4 @@ with open('TTT.csv', 'a', newline="") as csv_file:
         writer.writeheader()
         writer.writerow(data)
     else:
-        writer.writerow(data)
-=======
-   task_Menu()
->>>>>>> c7bbb61e0e1ca198ac23cc9913ee323683c7ad9d
+        writer.writerow(data) 
