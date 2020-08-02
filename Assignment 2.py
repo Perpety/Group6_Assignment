@@ -81,7 +81,7 @@ def convert_to_csv():
     print("Converting to) csv file.....")
     
 
-    with open('Assignment2.csv', 'a', newline="") as csv_file:
+    with open('Assignmet2.csv', 'a', newline="") as csv_file:
         header = ['TYPE', 'Task Name', 'Datetime task started', 'Datetime task ended',
                 'Number of hours spent', 'Total money earned $']
         writer = csv.DictWriter(csv_file, fieldnames=header)
